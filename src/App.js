@@ -53,24 +53,23 @@ const App = (props) => {
   ];
 
   return (
-    <ConfigProvider direction={i18n.dir(i18n.language)}>
     <Layout>
-      
+
       <Layout className="site-layout">
-      <Sider  collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-        <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} />
-      </Sider>
+        <Sider collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+          <div className="logo" />
+          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} />
+        </Sider>
         <Header
           className="site-layout-background"
           style={{
             padding: 0,
           }}
         >
-      <Debounce time="1000" handler="onResize">
-         <WindowResizeListener onResize={(windowSize) => this.props.toggleAll(windowSize.windowWidth, windowSize.windowHeight)} />
-            </Debounce>
-        <Topbar url={url} />
+          <Debounce time="1000" handler="onResize">
+            <WindowResizeListener onResize={(windowSize) => this.props.toggleAll(windowSize.windowWidth, windowSize.windowHeight)} />
+          </Debounce>
+          <Topbar url={url} />
           {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
             className: 'trigger',
             onClick: () => setCollapsed(!collapsed),
@@ -86,13 +85,12 @@ const App = (props) => {
           }}
         >
           {t("copyRight")}
-          <Button onClick={()=>changeLanguage('ar')}>change lang to ar</Button>
-          <Button onClick={()=>changeLanguage('en')}>change lang to en</Button>
+          <Button onClick={() => changeLanguage('ar')}>change lang to ar</Button>
+          <Button onClick={() => changeLanguage('en')}>change lang to en</Button>
           Content
         </Content>
       </Layout>
     </Layout>
-    </ConfigProvider>
   );
 };
 
