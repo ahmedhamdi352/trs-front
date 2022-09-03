@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Layout, } from 'antd';
-import { useTranslation } from "react-i18next";
 import {
     MenuUnfoldOutlined,
     MenuFoldOutlined,
@@ -16,21 +15,14 @@ const { Header } = Layout;
 const { logout } = authAction;
 
 const HeaderLayout = (props) => {
-    const { t } = useTranslation();
 
     const { collapsed, setCollapsed } = props;
     const [visible, setVisible] = useState(false);
     const dispatch = useDispatch();
-    const { i18n } = useTranslation();
 
     const hide = () => {
         setVisible(false);
         dispatch(logout())
-    };
-
-    const changeLang = () => {
-        setVisible(false);
-        i18n.changeLanguage(i18n.language === "en" ? 'ar' : 'en');
     };
 
     const handleVisibleChange = (newVisible) => {
@@ -54,7 +46,7 @@ const HeaderLayout = (props) => {
                     placement="bottomRight"
                     content={
                         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <a onClick={hide}>{t('logout')}</a>
+                            <a onClick={hide}>logout</a>
                         </div>
                     }
                     trigger="click"
