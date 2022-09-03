@@ -8,7 +8,6 @@ import {
     AreaChartOutlined,
     AppstoreOutlined
 } from '@ant-design/icons';
-import i18next from 'i18next';
 
 export const items = [
     {
@@ -87,7 +86,7 @@ export const showItems = (items) => {
                 key: item.id,
                 icon: item.icon,
                 children: item.children ? showItems(item.children) : undefined,
-                label: i18next.t(item.name),
+                label: item.name,
                 target: item.target,
                 role: item.role
             }
