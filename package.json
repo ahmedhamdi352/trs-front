@@ -1,0 +1,69 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hookform/error-message": "^0.0.5",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "antd": "^4.20.7",
+    "axios": "^0.18.0",
+    "clone": "^2.1.1",
+    "glamor": "^2.20.40",
+    "i18next": "^21.8.8",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "i18next-http-backend": "^1.4.1",
+    "jwt-decode": "^2.2.0",
+    "mui-datatables": "^3.7.1",
+    "nprogress": "^0.2.0",
+    "query-string": "^7.1.1",
+    "react": "^17.0.1",
+    "react-color": "^2.19.3",
+    "react-dom": "17.0.1",
+    "react-hook-form": "^6.11.0",
+    "react-i18next": "^11.17.0",
+    "react-intl": "^6.0.4",
+    "react-placeholder": "^2.0.0",
+    "react-redux": "7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.1",
+    "react-smooth-scrollbar": "^8.0.6",
+    "react-throttle": "^0.3.0",
+    "react-toastify": "^5.0.1",
+    "react-window-size-listener": "^1.0.10",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "smooth-scrollbar": "^8.2.5",
+    "styled-components": "^2.2.1",
+    "styled-theme": "^0.3.3",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

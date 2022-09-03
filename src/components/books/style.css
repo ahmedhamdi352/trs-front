@@ -1,0 +1,59 @@
+.item > button {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 0px;
+}
+.item1 > button {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 0px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.container > div {
+  width: 100%;
+  flex: 20%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  box-shadow: 0 0 0 1px black;
+  margin-bottom: 10px;
+    margin-right: 1px;
+  margin-left: 1px;
+}
+
+
+.item1 {
+  width: 100%;
+  text-align: center;
+  /* padding: 5px; */
+  
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.container1 > div {
+  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  box-shadow: 0 0 0 1px black;
+  margin-bottom: 10px;
+  
+}
+
+.block{
+      background-color: gray;
+    text-align: center;
+    padding: 16px;
+    flex: 100% !important;
+}

@@ -1,0 +1,15 @@
+{
+    "localization_testing": "arabic",
+    "signIn": "تسجيل دخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "dontHaveAccount": "لا أملك حساب بعد؟",
+    "rememberMe": "تذكرني",
+    "copyRight": "© 2020 جميع الحقوق محفوظة.",
+    "forgotPassword": "فقدت كلمة المرور؟",
+    "users":"المستخدمين",
+    "Events":"الرحلات",
+    "logout":"تسجيل الخروج",
+    "changeLang":"English"
+
+  }
