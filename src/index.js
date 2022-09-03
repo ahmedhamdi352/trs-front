@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import DashApp from './dashApp';
 import * as serviceWorker from './serviceWorker';
-import './i18n'
 import 'antd/dist/antd.min.css';
 
 ReactDOM.render(<DashApp />, document.getElementById('root'));
